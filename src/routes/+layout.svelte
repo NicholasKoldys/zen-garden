@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as globals from "../global.css";
-	import type { LayoutProps } from './$types';
+	import { base } from "$app/paths";
+	import type { LayoutProps } from "./$types";
 	let { data, children }: LayoutProps = $props();
 
 </script>
@@ -10,9 +11,9 @@
 </svelte:head>
 
 <nav>
-	<a href="/">Home</a>
-	<a href="/about">About</a>
-	<a href="/collection/World">Collection</a>
+	<a href="{base}/">Home</a>
+	<a href="{base}/about">About</a>
+	<a href="{base}/collection/World">Collection</a>
 </nav>
 
 {@render children()}
