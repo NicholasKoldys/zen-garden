@@ -1,0 +1,38 @@
+# IGNORE ALL
+*/**/*
+*.*
+
+# ALLOW
+!/src/**/*
+!/static/**/*
+!.gitignore
+!package.json
+!pnpm-lock.yaml
+!svelte.config.js
+!tsconfig.json
+!vite.config.ts
+!vitest-setup-client.ts
+
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
