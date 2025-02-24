@@ -35,7 +35,7 @@ jobs:
         run: pnpm install
       - name: distribute
         env:
-          BASE_PATH: '/zen-gardern'
+          BASE_PATH: '/zen-garden'
         run: |
           pnpm run build
           touch build/.nojekyll
