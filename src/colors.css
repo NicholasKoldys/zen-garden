@@ -1,0 +1,19 @@
+:root {
+  --theme_background: #c5c5c5;
+  --theme_lightText: #000;
+
+  /** SVG */
+  /* -- Light Theme (lt) -- */
+  --theme_text: #ff0000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme_background: #4e4e4e;
+    --theme_lightText: #FFF;
+
+    /** SVG */
+    /* -- Dark Theme (dt) -- */
+    --theme_text: #FFF;
+  }
+}
